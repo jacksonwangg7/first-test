@@ -1,0 +1,8 @@
+<view class="container">
+  <image src="/image/test.png" class="user-avatar"></image>
+  <text class="user-name">hello,七月</text>
+  <!-- catch防止冒泡 -->
+  <view class="user-btn-container" catch:tap="onTop">
+    <text class="user-btn">开启小程序之旅</text> 
+  </view>
+</view>

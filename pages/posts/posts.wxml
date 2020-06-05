@@ -1,0 +1,29 @@
+<view>
+  <swiper indicator-dots="true" indicator-color="#fff" indicator-active-color="#8E6245" autoplay="true" interval="3000">
+    <swiper-item>
+    <image src="/image/article2.jpg"></image>
+    </swiper-item>
+    <swiper-item >
+    <image src="/image/article4.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+    <image src="/image/article6.jpg"></image>
+    </swiper-item>
+  </swiper>
+  <!-- 第二篇、第三篇 -->
+  <block wx:for='{{post_content}}' wx:for-item="item" wx:for-index="index" wx:key="index">
+  <view class="post-container" data-postId='{{item.post_id}}' bind:tap='onTap'>
+    <view class="post-author-date">
+      <image src="../../image/title.png" class="post-author"></image>
+      <text class="post-date">{{item.date}}</text>
+    </view>
+    <text class="post-title">{{item.title}}</text>
+    <image src="{{item.img_src}}" class="post-image"></image>
+    <text class="post-content">{{item.content}}</text>
+    <view class="post-info">
+    <text>点赞：96</text>
+    <text style="margin-left:20rpx;">浏览：112</text>
+    </view>
+  </view>
+  </block>
+</view>

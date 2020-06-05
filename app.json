@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/posts/posts",
+    "pages/post-detail/post-detail",
+    "pages/demo/demo"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#b3d4db"
+  },
+  "tabBar": {
+    "selectedColor":"#b3d4db",
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/posts/posts",
+      "text": "阅读",
+      "iconPath": "/image/yuedu.png",
+      "selectedIconPath": "/image/yuedu-1.png"
+    },
+    {
+      "pagePath": "pages/demo/demo",
+      "text": "demo",
+      "iconPath": "/image/dianying.png",
+      "selectedIconPath": "/image/dianying-1.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap98.json"
+}

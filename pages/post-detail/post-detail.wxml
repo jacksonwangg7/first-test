@@ -1,0 +1,20 @@
+<view>
+  <image src="{{postdata.img_src}}" style="width:100%"></image>
+  <view class="info">
+    <image src='../../image/title.png' class='info-image'></image>
+    <text class='info-text' style="font-size:36rpx">{{postdata.author}}</text>
+    <text class='info-text'>发表于</text>
+    <text class='info-text'>{{postdata.time}}</text>
+  </view>
+  <view class="title">{{postdata.title}}</view>
+  <view class="diliver">
+    <view  class="diliver-line"></view>
+    <!-- <image src='../../image/share-anti.png' class="diliver-image"  style="right:0rpx"></image> -->
+    <image src='../../image/share.png' class="diliver-image"  style="right:0rpx"></image>
+    <image wx:if="{{collected}}" src='../../image/mark.png' class="diliver-image" bind:tap="collectTap"></image>
+    <image wx:else src='../../image/mark-anti.png' class="diliver-image" bind:tap="collectTap"></image>
+  </view>
+  <view class="article">
+    <text>{{postdata.content}}</text>  
+  </view>
+</view>
