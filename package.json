@@ -1,0 +1,7 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "weui-wxss": "^2.3.0"
+  }
+}

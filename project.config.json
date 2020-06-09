@@ -24,7 +24,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wxa405622818680a42",
+	"appid": "wxa845a388525dc513",
 	"projectname": "miniprogram-1",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -93,8 +93,8 @@
 				},
 				{
 					"id": 5,
-					"name": "pages/welcome/welcome",
-					"pathName": "pages/welcome/welcome",
+					"name": "pages/demo/demo",
+					"pathName": "pages/demo/demo",
 					"query": "",
 					"scene": null
 				}

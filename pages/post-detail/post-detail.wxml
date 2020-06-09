@@ -10,7 +10,7 @@
   <view class="diliver">
     <view  class="diliver-line"></view>
     <!-- <image src='../../image/share-anti.png' class="diliver-image"  style="right:0rpx"></image> -->
-    <image src='../../image/share.png' class="diliver-image"  style="right:0rpx"></image>
+    <!-- <image src='../../image/share.png' class="diliver-image"  style="right:0rpx"bind:tap="shareTap" ></image> -->
     <image wx:if="{{collected}}" src='../../image/mark.png' class="diliver-image" bind:tap="collectTap"></image>
     <image wx:else src='../../image/mark-anti.png' class="diliver-image" bind:tap="collectTap"></image>
   </view>

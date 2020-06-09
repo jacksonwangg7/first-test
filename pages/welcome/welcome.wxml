@@ -1,5 +1,5 @@
-<view class="container">
-  <image src="/image/test.png" class="user-avatar"></image>
+<view class="container page">
+  <image src="/image/test.jpg" class="user-avatar"></image>
   <text class="user-name">hello,七月</text>
   <!-- catch防止冒泡 -->
   <view class="user-btn-container" catch:tap="onTop">

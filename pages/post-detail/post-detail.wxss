@@ -31,10 +31,10 @@
 }
 .diliver-image{
   position:absolute;
-  right:110rpx;
   top:-40rpx;
   width:80rpx;
   height:80rpx;
+  right:0;
 }
 .article{
   margin-left:20rpx;

@@ -1,2 +1,13 @@
 <!--pages/demo/demo.wxml-->
-<text>pages/demo/demo.wxml</text>
+<view>
+<map class="map" latitude="{{latitude}}" longitude="{{longitude}}"></map>
+<view class="menu">
+	<!-- 搜索位置 -->
+	<mp-searchbar bindselectresult="selectResult" search="{{search}}" bindinput="bindKeyInput" cancel="{{false}}" bindclear="subHide" value="{{inputVal}}"></mp-searchbar>
+	<block wx:for="{{sugData}}" wx:key="index">
+		<view class="sug_info" bindtap="routerLink" data-subId='{{index}}' wx:if="{{subShow}}">
+			<text>{{item.name}}</text>
+		</view>
+	</block>
+</view>
+</view>

@@ -9,21 +9,29 @@
     "navigationBarBackgroundColor": "#b3d4db"
   },
   "tabBar": {
-    "selectedColor":"#b3d4db",
-    "borderStyle":"white",
-    "list": [{
-      "pagePath": "pages/posts/posts",
-      "text": "阅读",
-      "iconPath": "/image/yuedu.png",
-      "selectedIconPath": "/image/yuedu-1.png"
-    },
-    {
-      "pagePath": "pages/demo/demo",
-      "text": "demo",
-      "iconPath": "/image/dianying.png",
-      "selectedIconPath": "/image/dianying-1.png"
+    "selectedColor": "#b3d4db",
+    "list": [
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "阅读",
+        "iconPath": "/image/yuedu.png",
+        "selectedIconPath": "/image/yuedu-1.png"
+      },
+      {
+        "pagePath": "pages/demo/demo",
+        "text": "导航",
+        "iconPath": "/image/dianying.png",
+        "selectedIconPath": "/image/dianying-1.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "位置信息保证不外泄"
     }
-  ]
+  },
+  "useExtendedLib": {
+    "weui": true
   },
   "sitemapLocation": "sitemap98.json"
 }

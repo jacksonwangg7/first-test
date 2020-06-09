@@ -45,7 +45,14 @@ Page({
     wx.setStorageSync('postsCollected', postsCollected)
     wx.showToast({
       title: postCollected ? '收藏成功' : '取消成功',
-      icon:'success'
+      icon: 'success'
+    })
+  },
+  shareTap: function () {//显示当前页面的分享按钮，默认分享整个小程序
+    wx.showShareMenu({
+      success: (res) => {
+        console.log("显示成功！")
+      }
     })
   },
 
